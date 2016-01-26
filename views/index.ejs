@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" >
+    </head>
+    <body>
+        <div class="container">
+        <h1>
+        <%=title%>
+    </h1>
+    <ul>
+        <%for(var len=0;len<newtodo.length;len++){%>
+            <li><%=newtodo[len].desc%></li>
+          <%}%>
+    </ul>
+    <form action="/add" method="post">
+    <input type="text" name="addnew" />
+    <input type="submit" value="提交新工作" />
+    </form>
+    </div>
+    </body>
+</html>
+    
