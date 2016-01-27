@@ -14,5 +14,5 @@ app.use(express.static(path.join(__dirname,'bower_components')));
 app.use(require('./todo'));
 
 app.listen("3333",function(){
-    console.log("I am stating");
+    console.log("开始运行了");
 });
